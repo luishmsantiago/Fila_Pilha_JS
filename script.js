@@ -1,3 +1,14 @@
+//Adicionei o trabalho ao vercel para que pudesse ser visto on-line.
+const link = document.getElementById('link'); // Seleciona o h2 pelo ID
+
+const a = document.createElement('a');
+a.innerText = 'Link'; 
+a.href = 'https://fila-pilha-js.vercel.app/';
+a.target = '_blank'; // Para abrir em nova aba (opcional)
+
+link.appendChild(a);
+
+// Funções para adição de itens na pilha
 function addPilha() {
   var valor = document.getElementById("addTexto").value;
 
@@ -18,6 +29,7 @@ function addPilha() {
   alert("A pilha está cheia (Overflow)!");
 }
 
+// Funções para adição de itens na fila
 function addFila() {
   var valor = document.getElementById("addTexto").value;
 
@@ -38,6 +50,7 @@ function addFila() {
   alert("A fila está cheia! (Overflow)");	
 }
 
+// Funções para enviar itens da fila para a pilha
 function filaToPilha() {
   if (document.getElementById("pilha5").innerHTML !== "") {
     alert("A Pilha está cheia! (Overflow)");
@@ -74,6 +87,7 @@ function filaToPilha() {
   }
 }
 
+// Funções para enviar itens da pilha para a fila
 function pilhaToFila() {
   if (document.getElementById("fila5").innerHTML !== "") {
     alert("A Fila está cheia! (Overflow)");
