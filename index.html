@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AD1 - Luis Henrique</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>AD1 - Luis Henrique</h1>
+    <h2>Empilhar e Desempilhar</h2>
+  </header>
+
+  <br><br>
+  <div class="adicoes">
+    <button id="addPilha" onclick="addPilha()">Adicionar à Pilha</button>
+    <input type="text" id="addTexto">
+    <button id="addFila" onclick="addFila()">Adicionar à Fila</button>
+  </div>
+  <br><br><br>
+
+  <div class="cabecalho">
+    <p>Pilha</p>
+    <p>Fila</p>
+  </div>
+
+  <div class="container">
+    <table id="pilha" border="1">
+      <tr>
+        <td id="pilha5"></td>
+      </tr>
+      <tr>
+        <td id="pilha4"></td>
+      </tr>
+      <tr>
+        <td id="pilha3"></td>
+      </tr>
+      <tr>
+        <td id="pilha2"></td>
+      </tr>
+      <tr>
+        <td id="pilha1"></td>
+      </tr>
+    </table>
+    <br><br>
+
+    <table id="buttons">
+      <tr>
+        <td>
+          <button onclick="filaToPilha()">
+            <img src="esquerda.png" alt="Desempilhar Pilha" width="30">
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="pilhaToFila()">
+            <img src="direita.png" alt="Desempilhar Fila" width="30">
+          </button>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+
+    <table id="fila" border="1">
+      <tr>
+        <td id="fila1"></td>
+        <td id="fila2"></td>
+        <td id="fila3"></td>
+        <td id="fila4"></td>
+        <td id="fila5"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

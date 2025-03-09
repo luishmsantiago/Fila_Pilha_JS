@@ -1,0 +1,76 @@
+.header {
+  text-align: center; /* Centraliza o texto do cabeçalho */
+  margin-bottom: 20px; /* Adiciona um espaço entre o cabeçalho e o conteúdo */
+}
+
+.adicoes {
+  display: flex; /* Usa flexbox para organizar lado a lado */
+  gap: 20px; /* Espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões */
+  align-items: center;;
+}
+
+#buttons {
+  border: none; /* Remove a borda da tabela */
+  border-collapse: collapse; /* Garante que não haja bordas internas */
+}
+
+#buttons td {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+button img {
+  width: 30px;
+  height: auto;
+  vertical-align: middle; 
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex; /* Usa flexbox para organizar lado a lado */
+  gap: 20px; /* Espaçamento entre as tabelas */
+  align-content: center;
+  justify-content: center;
+}
+.cabecalho {
+  display: flex;
+  gap: 320px;
+  padding-left: 210px;
+}
+
+#pilha td {
+  padding-left: 20px;  /* Espaço inicial à esquerda */
+  padding-top: 10px;   /* Espaço inicial no topo */
+  padding-right: 200px; /* Espaço inicial à direita */
+  padding-bottom: 10px; /* Espaço inicial embaixo */
+  height: 15px;
+}
+
+#fila {
+  height: 30px;  /* A altura da tabela de fila deve ser limitada */
+}
+
+#fila td {
+  padding-left: 20px;  /* Espaço inicial à esquerda */
+  padding-top: 0px;    /* Sem espaço no topo */
+  padding-right: 200px; /* Espaço inicial à direita */
+  padding-bottom: 0px; /* Sem espaço embaixo */
+  height: 30px;        /* Defina uma altura específica para garantir que seja apenas de uma linha */
+  vertical-align: middle;  /* Garante que o conteúdo fique centralizado verticalmente */
+}
+
+#addPilha {
+  border: 2px solid black; /* Adiciona borda preta de 2px ao botão */
+}
+
+#addFila {
+  border: 2px solid black; /* Adiciona borda preta de 2px ao botão */
+}
+
